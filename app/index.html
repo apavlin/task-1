@@ -5,38 +5,44 @@
   <!-- IE switching to last mode -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!--  correct scale on different devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=1230, initial-scale=1">
   <title>Task1 Porfolio</title>
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/sprites.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="bower/modernizr/modernizr.js"></script>
   </head>
+
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container container-wide">
-        <a href="#" class="logo">
-          <img src="/images/logo.png" alt="Logo" class="logo-img">
-          <span class="logo-text">Text from logo
-          </span>
-        </a>
+      <div class="container-header">
+        <div class="logo-container">
+          <a href="http://loftschool.com" class="logo fleft">
+            <img src="/images/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">LoftShool От мыслителя к создателю
+            </span>
+          </a>
+        </div>
         <ul class="socials">
           <li class="socials-item">
-            <a href="#" class="socials-item-link">
+            <a href="http://vk.com/apavlin" class="socials-item-link sprite sprite-vk">
               vkontakte
             </a>
           </li>
           <li class="socials-item">
-            <a href="#" class="socials-item-link">
+            <a href="#" class="socials-item-link sprite sprite-tw">
               twitter
             </a>
           </li>
           <li class="socials-item">
-            <a href="#" class="socials-item-link">
+            <a href="https://www.facebook.com/apavlin82" class="socials-item-link sprite sprite-fb">
               facebook
             </a>
           </li>
           <li class="socials-item">
-            <a href="#" class="socials-item-link">
+            <a href="https://github.com/apavlin" class="socials-item-link sprite sprite-gh">
               github
             </a>
           </li>
@@ -44,21 +50,104 @@
       </div>
     </header>
 
-sdfasdfsad
-fghdfgh
 
-    asdfas
+    <div class="container-main">
+          <aside class="sidebar fleft">
+            <nav class="nav">
+              <ul class="links-list fleft">
+                <li class="links-item active"><a href="index.html" class="links">Обо мне</a></li>
+                <li class="links-item "><a href="myworks.html" class="links">Мои работы</a></li>
+                <li class="links-item"><a href="contactme.html" class="links">Связаться со мной</a></li>
+              </ul>
+            </nav>
 
-    <main class="content">
-      <div class="container">
-          <aside class="sidebar"></aside>
-          <div class="content-area"></div>
-      </div>
-    </main>
+            <div class="contacts">
+              <h2 class="contacts-link contacts-title">Контакты</h2>
+              <ul class="contacts-list">
+                <li class="contacts-item contacts-mail contacts-icon">
+                  <a href="mailto:apavlin@yandex.ru" class="contacts-link">apavlin@yandex.ru</a>
+                </li>
+                <li class="contacts-item contacts-tel contacts-icon">
+                  <a href="tel://+7-923-601-1130" class="contacts-link ">+79236011130</a>
+                </li>
+                <li class="contacts-item  contacts-skype contacts-icon">
+                  <a href="skype:pavlin_bird_of_happyness" class="contacts-link ">pavlin_bird_ of_happyness</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
 
+          <section class="content-section fright">
+
+              <div class="aboutbox ">
+              <h2 class="aboutbox-title">Основная информация</h2>
+                <div class="userpic ">
+                  <img src="images/avatar.jpg" alt="userpic" width="100%" >
+                </div>
+                <ul class="basicinfo-list ">
+                  <li class="basicinfo-item"> Меня зовут:
+                    <span class="basicinfo-text">Адашкевич Павел Александрович </span>
+                  </li>
+                  <li class="basicinfo-item"> Мой возраст:
+                    <span class="basicinfo-text">34 года</span>
+                  </li>
+                  <li class="basicinfo-item"> Мой город:
+                    <span class="basicinfo-text">Кемерово, Россия</span>
+                  </li>
+                  <li class="basicinfo-item "> Моя специализация:
+                    <span class="basicinfo-text">FRONTEND разработчик</span>
+                  </li>
+                  <li class="basicinfo-item clearfix"> Ключевые навыки:
+                    <div class="skillsbox fright ">
+                        <span class="skills">HTML</span>
+                        <span class="skills">CSS</span>
+                        <span class="skills">javascript</span>
+                        <span class="skills">gulp</span>
+                        <span class="skills">git</span>
+                        <span class="skills">bower</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="aboutbox ">
+                  <h2 class="aboutbox-title">Опыт работы</h2>
+                  <ul class="aboutbox-list">
+                    <li class="aboutbox-item aboutbox-icon case">
+                      <span class="where">ООО "Компания ОЛГА" - маркетолог</span>
+                      <span class="period">Октябрь 2002 - Май 2004</span>
+                    </li>
+                    <li class="aboutbox-item aboutbox-icon case">
+                      <span class="where">ООО "Евросеть-Ритейл" - бизнес-тренер</span>
+                      <span class="period">Май 2005 - Март 2013</span>
+                    </li>
+                  </ul>
+              </div>
+
+
+              <div class="aboutbox ">
+                  <h2 class="aboutbox-title">Образование </h2>
+                  <ul class="aboutbox-list">
+                    <li class="aboutbox-item aboutbox-icon study ">
+                      <div class="where ">Высшее экономическое. РЭУ им.Плеханова (РГТЭУ) <br> Специальность - Менеджмент </div>
+                      <span class="period  ">Сентябрь 1999 - июнь 2004</span>
+                    </li>
+                    <li class="aboutbox-item aboutbox-icon course">
+                      <span class="where">Курсы Loftschool.ru</span>
+                      <span class="period">Январь 2016 - по настоящее время</span>
+                    </li>
+                  </ul>
+              </div>
+          </section>
+    </div>
   </div>
-  <footer class="footer">
 
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="#" class='entry sprite sprite-lock'>Вход в личный кабинет</a>
+      <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

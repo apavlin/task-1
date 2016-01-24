@@ -1,0 +1,91 @@
+.sprite {
+    background-image: url(/images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-addproject {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-case {
+    width: 36px;
+    height: 34px;
+    background-position: -47px -5px;
+}
+
+.sprite-course {
+    width: 26px;
+    height: 32px;
+    background-position: -93px -5px;
+}
+
+.sprite-fb {
+    background-position: -129px -5px;
+}
+
+.sprite-fb:hover {
+    background-position: -5px -62px;
+}
+
+.sprite-gh {
+    background-position: -62px -62px;
+}
+
+.sprite-gh:hover {
+    background-position: -119px -62px;
+}
+
+.sprite-lock {
+    width: 20px;
+    height: 32px;
+    background-position: -5px -119px;
+}
+
+.sprite-mail {
+    width: 21px;
+    height: 16px;
+    background-position: -35px -119px;
+}
+
+.sprite-phone {
+    width: 19px;
+    height: 20px;
+    background-position: -66px -119px;
+}
+
+.sprite-skype {
+    width: 20px;
+    height: 20px;
+    background-position: -95px -119px;
+}
+
+.sprite-study {
+   /* width: 41px;
+    height: 23px;*/
+    background-position: -125px -119px;
+}
+
+.sprite-tw {
+    background-position: -186px -5px;
+}
+
+.sprite-tw:hover {
+    background-position: -176px -62px;
+}
+
+.sprite-unlock {
+    width: 20px;
+    height: 32px;
+    background-position: -176px -119px;
+}
+
+.sprite-vk {
+    background-position: -5px -161px;
+}
+
+.sprite-vk:hover {
+    background-position: -62px -161px;
+}
