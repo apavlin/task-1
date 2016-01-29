@@ -4,23 +4,6 @@
     display: block;
 }
 
-.sprite-addproject {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -5px;
-}
-
-.sprite-case {
-    width: 36px;
-    height: 34px;
-    background-position: -47px -5px;
-}
-
-.sprite-course {
-    width: 26px;
-    height: 32px;
-    background-position: -93px -5px;
-}
 
 .sprite-fb {
     background-position: -129px -5px;
@@ -42,30 +25,6 @@
     width: 20px;
     height: 32px;
     background-position: -5px -119px;
-}
-
-.sprite-mail {
-    width: 21px;
-    height: 16px;
-    background-position: -35px -119px;
-}
-
-.sprite-phone {
-    width: 19px;
-    height: 20px;
-    background-position: -66px -119px;
-}
-
-.sprite-skype {
-    width: 20px;
-    height: 20px;
-    background-position: -95px -119px;
-}
-
-.sprite-study {
-   /* width: 41px;
-    height: 23px;*/
-    background-position: -125px -119px;
 }
 
 .sprite-tw {

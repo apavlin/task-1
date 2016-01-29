@@ -27,8 +27,8 @@
         <div class="logo-container">
           <a href="/" class="logo fleft">
             <img src="/images/logo.png" alt="Logo" class="logo-img">
-            <h1 class="logo-text">LoftShool От мыслителя к создателю
-            </h1>
+            <span class="logo-text">LoftShool От мыслителя к создателю
+            </span>
           </a>
         </div>
         <ul class="socials">
@@ -61,13 +61,13 @@
           <aside class="sidebar fleft">
             <nav class="nav">
               <ul class="links-list fleft">
-                <li class="links-item active"><a href="index.html" class="links">Обо мне</a></li>
+                <li class="links-item "><a href="index.html" class="links">Обо мне</a></li>
                 <li class="links-item "><a href="myworks.html" class="links">Мои работы</a></li>
-                <li class="links-item"><a href="contactme.html" class="links">Связаться со мной</a></li>
+                <li class="links-item active"><a href="contactme.html" class="links">Связаться со мной</a></li>
               </ul>
             </nav>
 
-            <div class="contacts">
+             <div class="contacts">
               <h2 class="contacts-title">Контакты</h2>
               <ul class="contacts-list">
                 <li class="contacts-item ">
@@ -85,64 +85,29 @@
 
           <section class="content-section fright">
 
-              <div class="aboutbox ">
-              <h2 class="aboutbox-title">Основная информация</h2>
-                <div class="userpic ">
-                  <img src="images/avatar.jpg" alt="userpic" width="100%" >
-                </div>
-                <ul class="basicinfo-list ">
-                  <li class="basicinfo-item"> Меня зовут:
-                    <span class="basicinfo-text">Адашкевич Павел Александрович</span>
-                  </li>
-                  <li class="basicinfo-item"> Мой возраст:
-                    <span class="basicinfo-text">34 года</span>
-                  </li>
-                  <li class="basicinfo-item"> Мой город:
-                    <span class="basicinfo-text">Кемерово, Россия</span>
-                  </li>
-                  <li class="basicinfo-item"> Моя специализация:
-                    <span class="basicinfo-text">FRONTEND разработчик</span>
-                  </li>
-                  <li class="basicinfo-item"> Ключевые навыки:
-                    <div class="skillsbox ">
-                        <span class="skills">html</span>
-                        <span class="skills">css</span>
-                        <span class="skills">javascript</span>
-                        <span class="skills">gulp</span>
-                        <span class="skills">git</span>
-                        <span class="skills">bower</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <div class="aboutbox formbox">
+                <h1 class="formheader">
+                  У вас интересный проект? Напишите мне
+                </h1>
+                <form action="https://" class="form-container clearfix" method="post">
 
-              <div class="aboutbox ">
-                  <h2 class="aboutbox-title">Опыт работы</h2>
-                  <ul class="aboutbox-list">
-                    <li class="aboutbox-item aboutbox-icon case">
-                      <span class="where">ООО "Компания ОЛГА" - маркетолог</span>
-                      <span class="period">Октябрь 2002 - Май 2004</span>
-                    </li>
-                    <li class="aboutbox-item aboutbox-icon case">
-                      <span class="where">ООО "Евросеть-Ритейл" - бизнес-тренер</span>
-                      <span class="period">Май 2005 - Март 2013</span>
-                    </li>
-                  </ul>
-              </div>
+                  <label for="fieldname"class="label halfwidth fleft">Имя </label>
+                  <label for="fieldmail"class="label halfwidth fright">Email </label>
 
+                  <input id="fieldname" class="formtextstyle halfwidthfield fleft" type="text" name="name" placeholder="Как к Вам обращаться" required>
+                  <input id="fieldmail" class="formtextstyle halfwidthfield fright" type="email" name="mail" placeholder="Куда мне писать" required>
 
-              <div class="aboutbox ">
-                  <h2 class="aboutbox-title">Образование </h2>
-                  <ul class="aboutbox-list">
-                    <li class="aboutbox-item aboutbox-icon study ">
-                      <div class="where ">Высшее экономическое. РЭУ им.Плеханова (РГТЭУ) <br> Специальность - Менеджмент </div>
-                      <span class="period  ">Сентябрь 1999 - июнь 2004</span>
-                    </li>
-                    <li class="aboutbox-item aboutbox-icon course">
-                      <span class="where">Курсы Loftschool.ru</span>
-                      <span class="period">Январь 2016 - по настоящее время</span>
-                    </li>
-                  </ul>
+                  <label for="textarea" class="label ">Сообщение </label>
+                  <textarea id="textarea" class="textarea formtextstyle" name="message"  cols="20" rows="10" placeholder="Кратко в чем суть" required></textarea>
+
+                  <label for="captchacode" class="label codeinput fleft">Введите код, указанный на картинке
+                  <img src="images/captcha.png" class="captchaimage" height="79" width="191" alt="captchaimage">
+                  <input id="captchacode" class="formtextstyle halfwidthfield fright captchacode" type="text" name="code" placeholder="Введите код" required></label>
+
+                  <input class="formbutton sendbtn fleft" type="submit" value="Отправить">
+                  <input class="formbutton resetbtn fright" type="reset" value="Очистить">
+
+                </form>
               </div>
           </section>
     </div>
@@ -159,5 +124,6 @@
   <script src="bower/jquery/jquery.js"></script>
   <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>

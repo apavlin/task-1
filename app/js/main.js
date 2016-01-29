@@ -1,1 +1,1 @@
-console.log("in main.js")
+$('input, textarea').placeholder();
