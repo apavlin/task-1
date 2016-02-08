@@ -9,6 +9,7 @@
 
   <title>Task1 Porfolio</title>
   <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/sprites.css">
   <link rel="stylesheet" href="css/main.css">
@@ -89,20 +90,38 @@
                 <h1 class="formheader">
                   У вас интересный проект? Напишите мне
                 </h1>
-                <form action="https://" class="form-container clearfix" method="post">
+                <form id="contactMeForm" action="#" class="form-container clearfix" method="post">
 
-                  <label for="fieldname"class="label halfwidth fleft">Имя </label>
-                  <label for="fieldmail"class="label halfwidth fright">Email </label>
+                  <fieldset class="form-fieldset">
+                    <div class="form-block-wrapper">
+                      <label for="fieldname" class="label  fleft">Имя </label>
+                      <input id="fieldname" class="formtextstyle fleft" type="text" name="name" qtip-content="Вы не ввели имя" placeholder="Как к Вам обращаться">
+                    </div>
 
-                  <input id="fieldname" class="formtextstyle halfwidthfield fleft" type="text" name="name" placeholder="Как к Вам обращаться" required>
-                  <input id="fieldmail" class="formtextstyle halfwidthfield fright" type="email" name="mail" placeholder="Куда мне писать" required>
+                    <div class="form-block-wrapper fright">
+                      <label for="fieldmail" class="label  fleft">Email </label>
+                     <input id="fieldmail" class="formtextstyle  fleft" type="email" name="mail" qtip-content="Вы не ввели email" qtip-position="right" placeholder="Куда мне писать" >
+                    </div>
+                  </fieldset>
 
-                  <label for="textarea" class="label ">Сообщение </label>
-                  <textarea id="textarea" class="textarea formtextstyle" name="message"  cols="20" rows="10" placeholder="Кратко в чем суть" required></textarea>
+                  <fieldset class="form-fieldset">
+                    <div class="textarea-wrapper">
+                      <label for="textarea" class="label ">Сообщение </label>
+                      <textarea id="textarea" class="textarea formtextstyle" name="message"  cols="20" rows="10" qtip-content="Что вы хотите мне сообщить?" placeholder="Кратко в чем суть" ></textarea>
+                    </div>
+                  </fieldset>
 
-                  <label for="captchacode" class="label codeinput fleft">Введите код, указанный на картинке
-                  <img src="images/captcha.png" class="captchaimage" height="79" width="191" alt="captchaimage">
-                  <input id="captchacode" class="formtextstyle halfwidthfield fright captchacode" type="text" name="code" placeholder="Введите код" required></label>
+                  <fieldset class="form-fieldset">
+                    <label for="captchacode" class="label codeinput fleft">Введите код, указанный на картинке</label>
+
+                    <div class="form-block-wrapper fleft">
+                      <img src="images/captcha.png" class="captchaimage" height="79" width="191" alt="captchaimage">
+                    </div>
+
+                    <div class="form-block-wrapper fright">
+                      <input id="captchacode" class="formtextstyle  captchacode" type="text" name="code" qtip-content="Вы не ввели код" qtip-position="right" placeholder="Введите код" >
+                    </div>
+                  </fieldset>
 
                   <input class="formbutton sendbtn fleft" type="submit" value="Отправить">
                   <input class="formbutton resetbtn fright" type="reset" value="Очистить">
@@ -123,7 +142,10 @@
 
   <script src="bower/jquery/jquery.js"></script>
   <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+  <script src="bower/qtip2/jquery.qtip.js"></script>
   <script src="js/main.js"></script>
+  <script src='js/contact-me.js'></script>
+  <script src='js/validation.js'></script>
 
 </body>
 </html>
